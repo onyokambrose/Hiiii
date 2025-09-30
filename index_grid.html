@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyok Ambrose Resume - Grid Layout</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(cityscape.jpg);
+      background-repeat: no-repeat;
+      background-size: 120%;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr; 
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+      background: #e7ecf5;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .sidebar img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .sidebar h3 {
+      font-size: 14px;
+      margin-top: 15px;
+      color: #333;
+      text-transform: uppercase;
+      border-bottom: 1px solid #999;
+      padding-bottom: 5px;
+    }
+    .sidebar p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+    }
+    .main {
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .main h1 {
+      font-size: 32px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .main h2 {
+      font-size: 28px;
+      color: #5c6f91;
+      margin: 0 0 15px;
+      letter-spacing: 1px;
+    }
+    .main p strong {
+      font-size: 16px;
+    }
+    .main h3 {
+      font-size: 18px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .main p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 5px 0;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="ambrose.jpeg" alt="Profile Picture">
+      <h3>Contact</h3>
+      <p>
+        123 Tech Avenue<br>
+        Kampala, Uganda<br>
+        +256 700 123456<br>
+        onyok@example.com<br>
+        www.onyokportfolio.com
+      </p>
+      <h3>Communication</h3>
+      <p>
+        Skilled in explaining technical concepts clearly and helping non-technical users understand IT systems.
+      </p>
+      <h3>Leadership</h3>
+      <p>
+        Awarded “Best IT Innovator” at Bellows College for leading software projects and mentoring junior students.
+      </p>
+    </div>
+    <div class="main">
+      <h1>ONYOK</h1>
+      <h2>AMBROSE</h2>
+      <p><strong>REGISTERED IT STUDENT</strong></p>
+      <div class="section">
+        <h3>Education</h3>
+        <p><strong>Muni University | Arua, Uganda</strong><br>
+          Bachelors of Science in Information Technology<br>
+          Relevant coursework: Networking, Database Systems, Information System, Computer Repair and assembling.
+        </p>
+      </div>
+      <div class="section">
+        <h3>Experience</h3>
+        <p><strong>June 2023 – Present</strong><br>
+          IT Support Intern | Tech Solutions Africa<br>
+          Provided technical support, troubleshooted hardware/software, and maintained IT systems.
+        </p>
+        <p><strong>January 2022 – May 2023</strong><br>
+          Web Development Assistant | Bellows College<br>
+          Assisted in developing student portals using HTML, CSS, and JavaScript.
+        </p>
+        <p><strong>August 2021 – December 2021</strong><br>
+          Database Assistant | Wholeness Healthcare IT Dept.<br>
+          Supported database management and ensured system security.
+        </p>
+        <p>
+          I have a proven record of applying IT skills to real-world problems while maintaining quality and efficiency.
+        </p>
+      </div>
+      <div class="section">
+        <h3>References</h3>
+        <p><strong>Mr. Andogah Geoffery</strong><br>
+          Head of IT Department | Muni University.<br>
+          Email: g.andogah@muni.ac.ug  | Phone: +1 (608) 555-1212
+        </p>
+        <p><strong>Mary N. Achieng</strong><br>
+          Senior Systems Analyst | Tech Solutions Africa<br>
+          Email: machieng@techsolutionsafrica.com | Phone: +256 701 456789
+        </p>
+        <p><strong>Eng. Robert Mugisha</strong><br>
+          IT Consultant | Wholeness Healthcare<br>
+          Email: rmugisha@wholenesshealth.org | Phone: +256 772 987654
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
